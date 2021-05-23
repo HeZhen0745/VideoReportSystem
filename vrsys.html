@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="Content-Type" charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+            <title>Worker Interface</title>
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+            <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+            <![endif]-->
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+
+            <script src="//imgcache.qq.com/qcloud/tcbjs/1.9.0/tcb.js"></script>
+        </head>
+        <body>
+            <div class="container">
+                <div class = "container">
+                    
+                    <div class="jumbotron">
+                        <h2 style="text-align:center">Upload Your Video</h2>
+                    </div>
+                    <div style="max-width: 400px; margin: 25px auto; padding:15px">
+                        <div class="input-group input-group-lg" style="margin-bottom: 20px">
+                            <input type="file" name="file" id="file" class="form-control" >
+                        </div>
+                         <button type="button" class="btn btn-success btn-block btn-lg" id="upload" style="text-shadow: black 2px 1px 1px" >Upload</button>
+                        <div class="progress progress-striped active center-block" style="margin:25px auto; display:none" id="progressDisplay">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" id="uploadProgress" aria-valuemax="100" style="width:0" ></div>
+                        </div>
+                    </div>
+
+                </div>
+          <div class="container">
+              <div class="jumbotron">
+                  <h2 style="text-align:center">Video List</h2>
+              </div>
+              <div class="container" id="fileBox">
+                <!-- instance of one file
+                    <div class="col-md-6">
+                          <div class="thumbnail" style="padding: 20px">
+                              <video width= "100%" controls="controls" >
+                                   <source src="https://6478-dxwvr-1e2175-1258526572.tcb.qcloud.la/temp01/201926091_He Zhen.mp4" type="video/mp4">
+                              </video>
+                              <h4>Date: 2020-08-13</h4>
+                              <p><strong>Comment:</strong> Nice </p>
+                              <p class="text-right">
+                                  <button class="btn btn-primary">
+                                      Delete
+                                  </button>
+                              </p>
+                           </div>
+                       </div>
+                -->
+
+                </div>
+              <span id="filenotice"></span>
+          </div>
+          </div>
+        </body>
+        <script src="js/vrsys.js"></script>
+    </html>
